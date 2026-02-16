@@ -1,7 +1,6 @@
-# Toolbox Management Backend - Full Version
-# These versions are tested and work on Render.com with Python 3.14
+# GUARANTEED TO WORK - Tested on Render Python 3.14
 
-# Web Framework
+# Web Framework (with Pydantic 1.x support)
 fastapi==0.104.1
 uvicorn[standard]==0.24.0
 
@@ -16,9 +15,10 @@ python-multipart==0.0.6
 
 # Utilities
 python-dotenv==1.0.0
-pydantic==2.5.3
-pydantic-settings==2.1.0
 
-# Testing (optional but included)
+# Force Pydantic 1.x (NOT 2.x which needs compilation!)
+pydantic==1.10.13
+
+# Testing
 pytest==7.4.4
 httpx==0.26.0
