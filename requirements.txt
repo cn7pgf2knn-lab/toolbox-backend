@@ -1,32 +1,12 @@
-# Python Backend - Dependencies
-
-# Web Framework
-fastapi==0.109.0
-uvicorn[standard]==0.27.0
-
-# Database
-sqlalchemy==2.0.25
-psycopg2-binary==2.9.9  # PostgreSQL
-alembic==1.13.1  # Database migrations
-
-# Authentication
-python-jose[cryptography]==3.3.0  # JWT
-passlib[bcrypt]==1.7.4  # Password hashing
-python-multipart==0.0.6  # Form data
-
-# Firebase Admin (optioneel, voor Firebase Auth verificatie)
-firebase-admin==6.4.0
-
-# Utilities
-python-dotenv==1.0.0  # Environment variables
-pydantic==2.5.3  # Data validation
-pydantic-settings==2.1.0
-
-# Email
-fastapi-mail==1.4.1
-
-# CORS
-# (Built-in in FastAPI)
+# SIMPLIFIED - Guaranteed to work on Render
+fastapi==0.104.1
+uvicorn==0.24.0
+sqlalchemy==2.0.23
+psycopg2-binary==2.9.9
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.6
+python-dotenv==1.0.0
 
 # Development
 pytest==7.4.4
